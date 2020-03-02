@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		83228235240D9DB900262EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83228234240D9DB900262EDF /* Assets.xcassets */; };
 		83228238240D9DB900262EDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83228237240D9DB900262EDF /* Preview Assets.xcassets */; };
 		8322823B240D9DB900262EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83228239240D9DB900262EDF /* LaunchScreen.storyboard */; };
+		83228244240D9FA500262EDF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83228243240D9FA500262EDF /* Alamofire */; };
+		83228247240DA09300262EDF /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 83228246240DA09300262EDF /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83228247240DA09300262EDF /* CodeScanner in Frameworks */,
+				83228244240D9FA500262EDF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +95,10 @@
 			dependencies = (
 			);
 			name = Lommepenger;
+			packageProductDependencies = (
+				83228243240D9FA500262EDF /* Alamofire */,
+				83228246240DA09300262EDF /* CodeScanner */,
+			);
 			productName = Lommepenger;
 			productReference = 8322822B240D9DB400262EDF /* Lommepenger.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +127,10 @@
 				Base,
 			);
 			mainGroup = 83228222240D9DB400262EDF;
+			packageReferences = (
+				83228242240D9FA500262EDF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				83228245240DA09300262EDF /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 8322822C240D9DB400262EDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +354,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83228242240D9FA500262EDF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		83228245240DA09300262EDF /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83228243240D9FA500262EDF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83228242240D9FA500262EDF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		83228246240DA09300262EDF /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83228245240DA09300262EDF /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83228223240D9DB400262EDF /* Project object */;
 }
