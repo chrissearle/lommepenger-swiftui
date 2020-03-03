@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Lommepenger
-//
-//  Created by Chris Searle on 02/03/2020.
-//  Copyright © 2020 Chris Searle. All rights reserved.
-//
-
 import UIKit
 import SwiftUI
 
