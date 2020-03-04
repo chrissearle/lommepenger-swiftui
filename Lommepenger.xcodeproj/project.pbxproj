@@ -16,6 +16,7 @@
 		83228244240D9FA500262EDF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83228243240D9FA500262EDF /* Alamofire */; };
 		83228247240DA09300262EDF /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 83228246240DA09300262EDF /* CodeScanner */; };
 		83AF6667240E6B1A004D96DB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6666240E6B1A004D96DB /* Config.swift */; };
+		83AF6669240ECBC3004D96DB /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6668240ECBC3004D96DB /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8322823A240D9DB900262EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8322823C240D9DB900262EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83AF6666240E6B1A004D96DB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		83AF6668240ECBC3004D96DB /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				8322822E240D9DB400262EDF /* AppDelegate.swift */,
 				83228230240D9DB400262EDF /* SceneDelegate.swift */,
 				83228232240D9DB400262EDF /* ContentView.swift */,
+				83AF6668240ECBC3004D96DB /* ScannerView.swift */,
 				83228234240D9DB900262EDF /* Assets.xcassets */,
 				83228239240D9DB900262EDF /* LaunchScreen.storyboard */,
 				8322823C240D9DB900262EDF /* Info.plist */,
@@ -165,6 +168,7 @@
 				83AF6667240E6B1A004D96DB /* Config.swift in Sources */,
 				83228231240D9DB400262EDF /* SceneDelegate.swift in Sources */,
 				83228233240D9DB400262EDF /* ContentView.swift in Sources */,
+				83AF6669240ECBC3004D96DB /* ScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
