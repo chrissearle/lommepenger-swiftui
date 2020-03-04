@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830CEF9E240F8EF000383FEC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 830CEF9D240F8EF000383FEC /* KeychainSwift */; };
 		8322822F240D9DB400262EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322822E240D9DB400262EDF /* AppDelegate.swift */; };
 		83228231240D9DB400262EDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83228230240D9DB400262EDF /* SceneDelegate.swift */; };
 		83228233240D9DB400262EDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83228232240D9DB400262EDF /* ContentView.swift */; };
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830CEF9E240F8EF000383FEC /* KeychainSwift in Frameworks */,
 				83228247240DA09300262EDF /* CodeScanner in Frameworks */,
 				83228244240D9FA500262EDF /* Alamofire in Frameworks */,
 			);
@@ -104,6 +106,7 @@
 			packageProductDependencies = (
 				83228243240D9FA500262EDF /* Alamofire */,
 				83228246240DA09300262EDF /* CodeScanner */,
+				830CEF9D240F8EF000383FEC /* KeychainSwift */,
 			);
 			productName = Lommepenger;
 			productReference = 8322822B240D9DB400262EDF /* Lommepenger.app */;
@@ -136,6 +139,7 @@
 			packageReferences = (
 				83228242240D9FA500262EDF /* XCRemoteSwiftPackageReference "Alamofire" */,
 				83228245240DA09300262EDF /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				830CEF9C240F8EF000383FEC /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = 8322822C240D9DB400262EDF /* Products */;
 			projectDirPath = "";
@@ -364,6 +368,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		830CEF9C240F8EF000383FEC /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
 		83228242240D9FA500262EDF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -383,6 +395,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		830CEF9D240F8EF000383FEC /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 830CEF9C240F8EF000383FEC /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
 		83228243240D9FA500262EDF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 83228242240D9FA500262EDF /* XCRemoteSwiftPackageReference "Alamofire" */;
