@@ -16,6 +16,7 @@
 		8322823B240D9DB900262EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83228239240D9DB900262EDF /* LaunchScreen.storyboard */; };
 		83228244240D9FA500262EDF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83228243240D9FA500262EDF /* Alamofire */; };
 		83228247240DA09300262EDF /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 83228246240DA09300262EDF /* CodeScanner */; };
+		83A827EE2415814800DC7ADA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A827ED2415814800DC7ADA /* Authentication.swift */; };
 		83AF6667240E6B1A004D96DB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6666240E6B1A004D96DB /* Config.swift */; };
 		83AF6669240ECBC3004D96DB /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6668240ECBC3004D96DB /* ScannerView.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		83228237240D9DB900262EDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8322823A240D9DB900262EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8322823C240D9DB900262EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A827ED2415814800DC7ADA /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		83AF6666240E6B1A004D96DB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		83AF6668240ECBC3004D96DB /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				8322823C240D9DB900262EDF /* Info.plist */,
 				83228236240D9DB900262EDF /* Preview Content */,
 				83AF6666240E6B1A004D96DB /* Config.swift */,
+				83A827ED2415814800DC7ADA /* Authentication.swift */,
 			);
 			path = Lommepenger;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				83228231240D9DB400262EDF /* SceneDelegate.swift in Sources */,
 				83228233240D9DB400262EDF /* ContentView.swift in Sources */,
 				83AF6669240ECBC3004D96DB /* ScannerView.swift in Sources */,
+				83A827EE2415814800DC7ADA /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

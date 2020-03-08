@@ -4,6 +4,7 @@ import CodeScanner
 struct ContentView: View {
     @State private var showingScanner = false
     @State private var config : Config? = nil
+    @State private var authenticated = false
     
     var body: some View {
         VStack {
@@ -22,13 +23,34 @@ struct ContentView: View {
             }
 
             if (self.config != nil) {
-                Text(config!.accountNr)
+                if (self.authenticated == false) {
+                    Text("Please authenticate")
+                } else {
+                    Text(config!.accountNr)
+                }
             } else {
                 Text("You need to scan in a configuation")
             }
         }
         .onAppear {
             self.config = Config.loadConfig()
+            
+            if (self.config != nil && self.authenticated == false) {
+                self.askForAuth()
+            }
+        }
+    }
+    
+    func askForAuth() {
+        authenticateUser() { status in
+            switch(status) {
+            case .OK:
+                self.authenticated = true
+            case .Error:
+                self.authenticated = false
+            case .Unavailable:
+                self.authenticated = true
+            }
         }
     }
     
@@ -36,6 +58,10 @@ struct ContentView: View {
         if let config = Config.decodeConfig(json: code) {
             config.save()
             self.config = config
+            
+            if (self.authenticated == false) {
+                self.askForAuth()
+            }
         }
     }
 }
