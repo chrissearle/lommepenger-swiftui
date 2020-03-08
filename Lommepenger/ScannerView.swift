@@ -1,6 +1,15 @@
 import SwiftUI
 import CodeScanner
 
+let simulatedData = """
+{
+    "clientId": "clientId",
+    "clientSecret": "clientSecret",
+    "userId": "userId",
+    "accountNr": "12345678903"
+}
+"""
+
 struct ScannerView: View {
     @Environment(\.presentationMode) var presentation
 
@@ -20,7 +29,7 @@ struct ScannerView: View {
                     }
             }.padding()
             
-            CodeScannerView(codeTypes: [.qr], simulatedData: "-") { result in
+            CodeScannerView(codeTypes: [.qr], simulatedData: simulatedData) { result in
                 switch result {
                 case .success(let code):
                     self.scannedData = code
