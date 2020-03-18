@@ -46,10 +46,19 @@ struct ContentView: View {
             switch(status) {
             case .OK:
                 self.authenticated = true
+                self.getToken()
             case .Error:
                 self.authenticated = false
             case .Unavailable:
                 self.authenticated = true
+            }
+        }
+    }
+    
+    func getToken() {
+        if let config = self.config {
+            TokenService.getToken(config: config) { (accessToken) in
+                print("\(accessToken ?? "No token")")
             }
         }
     }
