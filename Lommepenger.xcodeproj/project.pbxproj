@@ -20,6 +20,8 @@
 		83A827EE2415814800DC7ADA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A827ED2415814800DC7ADA /* Authentication.swift */; };
 		83AF6667240E6B1A004D96DB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6666240E6B1A004D96DB /* Config.swift */; };
 		83AF6669240ECBC3004D96DB /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6668240ECBC3004D96DB /* ScannerView.swift */; };
+		83CB03D524322F070089BFD4 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB03D424322F070089BFD4 /* AccountService.swift */; };
+		83CB03D724325CD80089BFD4 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB03D624325CD80089BFD4 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		83A827ED2415814800DC7ADA /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		83AF6666240E6B1A004D96DB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		83AF6668240ECBC3004D96DB /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		83CB03D424322F070089BFD4 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		83CB03D624325CD80089BFD4 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				83AF6666240E6B1A004D96DB /* Config.swift */,
 				83A827ED2415814800DC7ADA /* Authentication.swift */,
 				8330372E2421FF6F006C65B0 /* TokenService.swift */,
+				83CB03D424322F070089BFD4 /* AccountService.swift */,
+				83CB03D624325CD80089BFD4 /* AccountView.swift */,
 			);
 			path = Lommepenger;
 			sourceTree = "<group>";
@@ -179,6 +185,8 @@
 				83228231240D9DB400262EDF /* SceneDelegate.swift in Sources */,
 				8330372F2421FF6F006C65B0 /* TokenService.swift in Sources */,
 				83228233240D9DB400262EDF /* ContentView.swift in Sources */,
+				83CB03D524322F070089BFD4 /* AccountService.swift in Sources */,
+				83CB03D724325CD80089BFD4 /* AccountView.swift in Sources */,
 				83AF6669240ECBC3004D96DB /* ScannerView.swift in Sources */,
 				83A827EE2415814800DC7ADA /* Authentication.swift in Sources */,
 			);
