@@ -16,7 +16,7 @@ extension String {
 }
 
 extension Double {
-    func inNok() -> String {
+    func currency() -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         guard let formatted = formatter.string(from: self as NSNumber) else {
@@ -40,13 +40,13 @@ struct AccountView: View {
                 VStack {
                     Text("Disponibelt")
                         .font(.caption)
-                    Text(account.available.inNok())
+                    Text(account.available.currency()).frame(maxWidth: .infinity)
                 }
                 .frame(maxWidth: .infinity)
                 VStack {
                     Text("Saldo")
                         .font(.caption)
-                    Text(account.balance.inNok())
+                    Text(account.balance.currency()).frame(maxWidth: .infinity)
                 }
                 .frame(maxWidth: .infinity)
             }
