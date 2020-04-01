@@ -32,17 +32,18 @@ struct Accounts : Decodable {
     }
 }
 
-
-class AccountService {
-    public static func getAccountDetails(config: Config, token: String, onComplete: @escaping (_ account: Account?) -> Void) {
+class AccountService : ObservableObject {
+    @Published public var account : Account? = nil
+    
+    public func refresh(token: String, config: Config) {
         let decoder = JSONDecoder()
-        
+
         let headers: HTTPHeaders = [
             "Authorization": "Bearer \(token)",
             "Accept": "application/json",
             "customerId": config.userId
         ]
-        
+
         let request = AF.request("https://api.sbanken.no/exec.bank/api/v1/accounts/",
                                  method: .get,
                                  headers: headers)
@@ -51,8 +52,6 @@ class AccountService {
             if let error = response.error {
                 print("Unable to fetch accounts \(response) \(error.localizedDescription)")
                 
-                onComplete(nil)
-                
                 return
             }
             
@@ -60,14 +59,11 @@ class AccountService {
                 account.accountNumber == config.accountNr
             }).first else {
                 print("Unable to find account")
-                
-                onComplete(nil)
-                
+
                 return
             }
-            
-            onComplete(account)
-        }
 
+            self.account = account
+        }
     }
 }
