@@ -75,9 +75,10 @@ struct TransactionsView: View {
             .onAppear() {
                 self.refresh()
             }
-            ForEach(transactionService.transactionList, id: \.self) { transaction in
-                TransactionView(transaction: transaction)
-                    .padding(.bottom)
+            List {
+                ForEach(transactionService.transactionList, id: \.self) { transaction in
+                    TransactionView(transaction: transaction)
+                }
             }
         }
     }

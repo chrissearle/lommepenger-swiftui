@@ -21,7 +21,6 @@ struct ContentView: View {
                                 AccountView(account: accountService.account!)
                                     .navigationBarTitle(Text(accountService.account!.name), displayMode: .inline)
                                 TransactionsView(account: accountService.account!, config: self.config!, token: self.token)
-                                    .padding(.horizontal)
                                 Spacer()
                             }
                         }
