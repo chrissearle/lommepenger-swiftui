@@ -33,8 +33,7 @@ struct AccountView: View {
     var body: some View {
         VStack {
             Text(account.accountNumber.accountFormat())
-                .padding(.bottom)
-                .padding(.top)
+                .padding(.vertical)
                 .font(.caption)
             HStack {
                 VStack {
@@ -50,7 +49,6 @@ struct AccountView: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-            Spacer()
         }
     }
 }

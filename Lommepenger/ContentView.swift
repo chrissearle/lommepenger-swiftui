@@ -5,15 +5,9 @@ struct ContentView: View {
     @State private var showingScanner = false
     @State private var config : Config? = nil
     @State private var authenticated = false
-    
-    @State private var account = Account(accountId: "",
-                                         accountNumber: "",
-                                         ownerCustomerId: "",
-                                         name: "Lommepenger",
-                                         accountType: "",
-                                         available: 0.0,
-                                         balance: 0.0,
-                                         creditLimit: 0.0)
+    @State private var token = ""
+
+    @ObservedObject var accountService = AccountService()
     
     var body: some View {
         NavigationView {
@@ -22,8 +16,15 @@ struct ContentView: View {
                     if (self.authenticated == false) {
                         Text("Please authenticate")
                     } else {
-                        AccountView(account: account)
-                            .navigationBarTitle(Text(account.name), displayMode: .inline)
+                        if (accountService.account != nil) {
+                            VStack {
+                                AccountView(account: accountService.account!)
+                                    .navigationBarTitle(Text(accountService.account!.name), displayMode: .inline)
+                                TransactionsView(account: accountService.account!, config: self.config!, token: self.token)
+                                    .padding(.horizontal)
+                                Spacer()
+                            }
+                        }
                     }
                 } else {
                     Text("You need to scan in a configuation")
@@ -37,11 +38,11 @@ struct ContentView: View {
                     .frame(width: 32, height: 32)
                 }
             )
-                .sheet(isPresented: $showingScanner) {
-                    ScannerView(scannedData: Binding(
-                        get: { "" },
-                        set: self.newScanData
-                    ))
+            .sheet(isPresented: $showingScanner) {
+                ScannerView(scannedData: Binding(
+                    get: { "" },
+                    set: self.newScanData
+                ))
             }
             .onAppear {
                 self.config = Config.loadConfig()
@@ -53,12 +54,23 @@ struct ContentView: View {
         }
     }
     
+    func refresh() {
+        if let config = self.config {
+            TokenService.getToken(config: config) { (accessToken) in
+                if let token = accessToken {
+                    self.accountService.refresh(token: token, config: config)
+                    self.token = token
+                }
+            }
+        }
+    }
+    
     func askForAuth() {
         authenticateUser() { status in
             switch(status) {
             case .OK:
                 self.authenticated = true
-                self.getToken()
+                self.refresh()
             case .Error:
                 self.authenticated = false
             case .Unavailable:
@@ -66,25 +78,7 @@ struct ContentView: View {
             }
         }
     }
-    
-    func getToken() {
-        if let config = self.config {
-            TokenService.getToken(config: config) { (accessToken) in
-                if let token = accessToken {
-                    AccountService.getAccountDetails(config: config, token: token) { (account) in
-                        if let account = account {
-                            self.account = account
-                        } else {
-                            print("No account")
-                        }
-                    }
-                } else {
-                    print("No token")
-                }
-            }
-        }
-    }
-    
+
     func newScanData(_ code: String) {
         if let config = Config.decodeConfig(json: code) {
             config.save()
