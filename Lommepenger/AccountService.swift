@@ -40,11 +40,10 @@ class AccountService : ObservableObject {
 
         let headers: HTTPHeaders = [
             "Authorization": "Bearer \(token)",
-            "Accept": "application/json",
-            "customerId": config.userId
+            "Accept": "application/json"
         ]
 
-        let request = AF.request("https://api.sbanken.no/exec.bank/api/v1/accounts/",
+        let request = AF.request("https://publicapi.sbanken.no/apibeta/api/v1/accounts/",
                                  method: .get,
                                  headers: headers)
         

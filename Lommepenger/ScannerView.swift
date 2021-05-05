@@ -5,7 +5,6 @@ let simulatedData = """
 {
     "clientId": "clientId",
     "clientSecret": "clientSecret",
-    "userId": "userId",
     "accountNr": "12345678903"
 }
 """

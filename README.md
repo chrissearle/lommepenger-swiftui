@@ -6,7 +6,6 @@ Create config.json
 {
   "clientId": "Application Client ID",
   "clientSecret": "Current application password",
-  "userId": "Your national ID (11 digits)",
   "accountNr": "The account you want (11 digits)"
 }
 ```
