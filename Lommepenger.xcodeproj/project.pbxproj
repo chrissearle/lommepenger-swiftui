@@ -3,118 +3,118 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		830CEF9E240F8EF000383FEC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 830CEF9D240F8EF000383FEC /* KeychainSwift */; };
-		8322822F240D9DB400262EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322822E240D9DB400262EDF /* AppDelegate.swift */; };
-		83228231240D9DB400262EDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83228230240D9DB400262EDF /* SceneDelegate.swift */; };
-		83228233240D9DB400262EDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83228232240D9DB400262EDF /* ContentView.swift */; };
-		83228235240D9DB900262EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83228234240D9DB900262EDF /* Assets.xcassets */; };
-		83228238240D9DB900262EDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83228237240D9DB900262EDF /* Preview Assets.xcassets */; };
-		8322823B240D9DB900262EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83228239240D9DB900262EDF /* LaunchScreen.storyboard */; };
-		83228244240D9FA500262EDF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83228243240D9FA500262EDF /* Alamofire */; };
-		83228247240DA09300262EDF /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 83228246240DA09300262EDF /* CodeScanner */; };
-		8330372F2421FF6F006C65B0 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330372E2421FF6F006C65B0 /* TokenService.swift */; };
-		83A827EE2415814800DC7ADA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A827ED2415814800DC7ADA /* Authentication.swift */; };
-		83AF6667240E6B1A004D96DB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6666240E6B1A004D96DB /* Config.swift */; };
-		83AF6669240ECBC3004D96DB /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6668240ECBC3004D96DB /* ScannerView.swift */; };
-		83CB03D524322F070089BFD4 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB03D424322F070089BFD4 /* AccountService.swift */; };
-		83CB03D724325CD80089BFD4 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB03D624325CD80089BFD4 /* AccountView.swift */; };
-		83CB03D924332C430089BFD4 /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB03D824332C420089BFD4 /* TransactionService.swift */; };
-		83CB03DB243476360089BFD4 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB03DA243476360089BFD4 /* TransactionsView.swift */; };
+		835F4F9E2725CC7300CCD91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835F4F9D2725CC7300CCD91D /* Assets.xcassets */; };
+		835F4FA12725CC7300CCD91D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835F4FA02725CC7300CCD91D /* Preview Assets.xcassets */; };
+		835F4FAB2725CCB500CCD91D /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FA82725CCB500CCD91D /* AccountService.swift */; };
+		835F4FAC2725CCB500CCD91D /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FA92725CCB500CCD91D /* TransactionService.swift */; };
+		835F4FAD2725CCB500CCD91D /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FAA2725CCB500CCD91D /* TokenService.swift */; };
+		835F4FB42725CCFC00CCD91D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FAE2725CCFC00CCD91D /* Config.swift */; };
+		835F4FB52725CCFC00CCD91D /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FAF2725CCFC00CCD91D /* ScannerView.swift */; };
+		835F4FB62725CCFC00CCD91D /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FB02725CCFC00CCD91D /* TransactionsView.swift */; };
+		835F4FB72725CCFC00CCD91D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FB12725CCFC00CCD91D /* AccountView.swift */; };
+		835F4FB82725CCFC00CCD91D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FB22725CCFC00CCD91D /* Authentication.swift */; };
+		835F4FB92725CCFC00CCD91D /* LommepengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FB32725CCFC00CCD91D /* LommepengerApp.swift */; };
+		835F4FBC2725CD5200CCD91D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 835F4FBB2725CD5200CCD91D /* Alamofire */; };
+		835F4FBF2725CD7200CCD91D /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 835F4FBE2725CD7200CCD91D /* CodeScanner */; };
+		835F4FC62725CEE600CCD91D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 835F4FC52725CEE600CCD91D /* KeychainSwift */; };
+		835F4FC82725CF3100CCD91D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F4FC72725CF3100CCD91D /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8322822B240D9DB400262EDF /* Lommepenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lommepenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8322822E240D9DB400262EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83228230240D9DB400262EDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83228232240D9DB400262EDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		83228234240D9DB900262EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		83228237240D9DB900262EDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8322823A240D9DB900262EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8322823C240D9DB900262EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8330372E2421FF6F006C65B0 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
-		83A827ED2415814800DC7ADA /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
-		83AF6666240E6B1A004D96DB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		83AF6668240ECBC3004D96DB /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
-		83CB03D424322F070089BFD4 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
-		83CB03D624325CD80089BFD4 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		83CB03D824332C420089BFD4 /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
-		83CB03DA243476360089BFD4 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		835F4F962725CC7200CCD91D /* Lommepenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lommepenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		835F4F9D2725CC7300CCD91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		835F4FA02725CC7300CCD91D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		835F4FA82725CCB500CCD91D /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		835F4FA92725CCB500CCD91D /* TransactionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
+		835F4FAA2725CCB500CCD91D /* TokenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		835F4FAE2725CCFC00CCD91D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		835F4FAF2725CCFC00CCD91D /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		835F4FB02725CCFC00CCD91D /* TransactionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		835F4FB12725CCFC00CCD91D /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		835F4FB22725CCFC00CCD91D /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		835F4FB32725CCFC00CCD91D /* LommepengerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LommepengerApp.swift; sourceTree = "<group>"; };
+		835F4FC72725CF3100CCD91D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		83228228240D9DB400262EDF /* Frameworks */ = {
+		835F4F932725CC7200CCD91D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830CEF9E240F8EF000383FEC /* KeychainSwift in Frameworks */,
-				83228247240DA09300262EDF /* CodeScanner in Frameworks */,
-				83228244240D9FA500262EDF /* Alamofire in Frameworks */,
+				835F4FC62725CEE600CCD91D /* KeychainSwift in Frameworks */,
+				835F4FBF2725CD7200CCD91D /* CodeScanner in Frameworks */,
+				835F4FBC2725CD5200CCD91D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		83228222240D9DB400262EDF = {
+		835F4F8D2725CC7200CCD91D = {
 			isa = PBXGroup;
 			children = (
-				8322822D240D9DB400262EDF /* Lommepenger */,
-				8322822C240D9DB400262EDF /* Products */,
+				835F4F982725CC7200CCD91D /* Lommepenger */,
+				835F4F972725CC7200CCD91D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8322822C240D9DB400262EDF /* Products */ = {
+		835F4F972725CC7200CCD91D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8322822B240D9DB400262EDF /* Lommepenger.app */,
+				835F4F962725CC7200CCD91D /* Lommepenger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8322822D240D9DB400262EDF /* Lommepenger */ = {
+		835F4F982725CC7200CCD91D /* Lommepenger */ = {
 			isa = PBXGroup;
 			children = (
-				8322822E240D9DB400262EDF /* AppDelegate.swift */,
-				83228230240D9DB400262EDF /* SceneDelegate.swift */,
-				83228232240D9DB400262EDF /* ContentView.swift */,
-				83AF6668240ECBC3004D96DB /* ScannerView.swift */,
-				83228234240D9DB900262EDF /* Assets.xcassets */,
-				83228239240D9DB900262EDF /* LaunchScreen.storyboard */,
-				8322823C240D9DB900262EDF /* Info.plist */,
-				83228236240D9DB900262EDF /* Preview Content */,
-				83AF6666240E6B1A004D96DB /* Config.swift */,
-				83A827ED2415814800DC7ADA /* Authentication.swift */,
-				8330372E2421FF6F006C65B0 /* TokenService.swift */,
-				83CB03D424322F070089BFD4 /* AccountService.swift */,
-				83CB03D624325CD80089BFD4 /* AccountView.swift */,
-				83CB03D824332C420089BFD4 /* TransactionService.swift */,
-				83CB03DA243476360089BFD4 /* TransactionsView.swift */,
+				835F4FB12725CCFC00CCD91D /* AccountView.swift */,
+				835F4FB22725CCFC00CCD91D /* Authentication.swift */,
+				835F4FAE2725CCFC00CCD91D /* Config.swift */,
+				835F4FC72725CF3100CCD91D /* ContentView.swift */,
+				835F4FB32725CCFC00CCD91D /* LommepengerApp.swift */,
+				835F4FAF2725CCFC00CCD91D /* ScannerView.swift */,
+				835F4FB02725CCFC00CCD91D /* TransactionsView.swift */,
+				835F4F9D2725CC7300CCD91D /* Assets.xcassets */,
+				835F4F9F2725CC7300CCD91D /* Preview Content */,
+				835F4FA72725CC7F00CCD91D /* Services */,
 			);
 			path = Lommepenger;
 			sourceTree = "<group>";
 		};
-		83228236240D9DB900262EDF /* Preview Content */ = {
+		835F4F9F2725CC7300CCD91D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				83228237240D9DB900262EDF /* Preview Assets.xcassets */,
+				835F4FA02725CC7300CCD91D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		835F4FA72725CC7F00CCD91D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				835F4FA82725CCB500CCD91D /* AccountService.swift */,
+				835F4FAA2725CCB500CCD91D /* TokenService.swift */,
+				835F4FA92725CCB500CCD91D /* TransactionService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8322822A240D9DB400262EDF /* Lommepenger */ = {
+		835F4F952725CC7200CCD91D /* Lommepenger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8322823F240D9DB900262EDF /* Build configuration list for PBXNativeTarget "Lommepenger" */;
+			buildConfigurationList = 835F4FA42725CC7300CCD91D /* Build configuration list for PBXNativeTarget "Lommepenger" */;
 			buildPhases = (
-				83228227240D9DB400262EDF /* Sources */,
-				83228228240D9DB400262EDF /* Frameworks */,
-				83228229240D9DB400262EDF /* Resources */,
+				835F4F922725CC7200CCD91D /* Sources */,
+				835F4F932725CC7200CCD91D /* Frameworks */,
+				835F4F942725CC7200CCD91D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -122,105 +122,92 @@
 			);
 			name = Lommepenger;
 			packageProductDependencies = (
-				83228243240D9FA500262EDF /* Alamofire */,
-				83228246240DA09300262EDF /* CodeScanner */,
-				830CEF9D240F8EF000383FEC /* KeychainSwift */,
+				835F4FBB2725CD5200CCD91D /* Alamofire */,
+				835F4FBE2725CD7200CCD91D /* CodeScanner */,
+				835F4FC52725CEE600CCD91D /* KeychainSwift */,
 			);
 			productName = Lommepenger;
-			productReference = 8322822B240D9DB400262EDF /* Lommepenger.app */;
+			productReference = 835F4F962725CC7200CCD91D /* Lommepenger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		83228223240D9DB400262EDF /* Project object */ = {
+		835F4F8E2725CC7200CCD91D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1250;
-				ORGANIZATIONNAME = "Chris Searle";
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					8322822A240D9DB400262EDF = {
-						CreatedOnToolsVersion = 11.3.1;
+					835F4F952725CC7200CCD91D = {
+						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 83228226240D9DB400262EDF /* Build configuration list for PBXProject "Lommepenger" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 835F4F912725CC7200CCD91D /* Build configuration list for PBXProject "Lommepenger" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 83228222240D9DB400262EDF;
+			mainGroup = 835F4F8D2725CC7200CCD91D;
 			packageReferences = (
-				83228242240D9FA500262EDF /* XCRemoteSwiftPackageReference "Alamofire" */,
-				83228245240DA09300262EDF /* XCRemoteSwiftPackageReference "CodeScanner" */,
-				830CEF9C240F8EF000383FEC /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				835F4FBA2725CD5200CCD91D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				835F4FBD2725CD7200CCD91D /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				835F4FC42725CEE600CCD91D /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
-			productRefGroup = 8322822C240D9DB400262EDF /* Products */;
+			productRefGroup = 835F4F972725CC7200CCD91D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8322822A240D9DB400262EDF /* Lommepenger */,
+				835F4F952725CC7200CCD91D /* Lommepenger */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		83228229240D9DB400262EDF /* Resources */ = {
+		835F4F942725CC7200CCD91D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8322823B240D9DB900262EDF /* LaunchScreen.storyboard in Resources */,
-				83228238240D9DB900262EDF /* Preview Assets.xcassets in Resources */,
-				83228235240D9DB900262EDF /* Assets.xcassets in Resources */,
+				835F4FA12725CC7300CCD91D /* Preview Assets.xcassets in Resources */,
+				835F4F9E2725CC7300CCD91D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		83228227240D9DB400262EDF /* Sources */ = {
+		835F4F922725CC7200CCD91D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8322822F240D9DB400262EDF /* AppDelegate.swift in Sources */,
-				83AF6667240E6B1A004D96DB /* Config.swift in Sources */,
-				83228231240D9DB400262EDF /* SceneDelegate.swift in Sources */,
-				8330372F2421FF6F006C65B0 /* TokenService.swift in Sources */,
-				83228233240D9DB400262EDF /* ContentView.swift in Sources */,
-				83CB03DB243476360089BFD4 /* TransactionsView.swift in Sources */,
-				83CB03D524322F070089BFD4 /* AccountService.swift in Sources */,
-				83CB03D724325CD80089BFD4 /* AccountView.swift in Sources */,
-				83AF6669240ECBC3004D96DB /* ScannerView.swift in Sources */,
-				83CB03D924332C430089BFD4 /* TransactionService.swift in Sources */,
-				83A827EE2415814800DC7ADA /* Authentication.swift in Sources */,
+				835F4FAB2725CCB500CCD91D /* AccountService.swift in Sources */,
+				835F4FB92725CCFC00CCD91D /* LommepengerApp.swift in Sources */,
+				835F4FB42725CCFC00CCD91D /* Config.swift in Sources */,
+				835F4FAC2725CCB500CCD91D /* TransactionService.swift in Sources */,
+				835F4FAD2725CCB500CCD91D /* TokenService.swift in Sources */,
+				835F4FB72725CCFC00CCD91D /* AccountView.swift in Sources */,
+				835F4FC82725CF3100CCD91D /* ContentView.swift in Sources */,
+				835F4FB52725CCFC00CCD91D /* ScannerView.swift in Sources */,
+				835F4FB62725CCFC00CCD91D /* TransactionsView.swift in Sources */,
+				835F4FB82725CCFC00CCD91D /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		83228239240D9DB900262EDF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8322823A240D9DB900262EDF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		8322823D240D9DB900262EDF /* Debug */ = {
+		835F4FA22725CC7300CCD91D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -265,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,13 +262,13 @@
 			};
 			name = Debug;
 		};
-		8322823E240D9DB900262EDF /* Release */ = {
+		835F4FA32725CC7300CCD91D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -320,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -330,41 +317,61 @@
 			};
 			name = Release;
 		};
-		83228240240D9DB900262EDF /* Debug */ = {
+		835F4FA52725CC7300CCD91D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lommepenger/Preview Content\"";
 				DEVELOPMENT_TEAM = EL8Z296J47;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Lommepenger/Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.chrissearle.Lommepenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		83228241240D9DB900262EDF /* Release */ = {
+		835F4FA62725CC7300CCD91D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lommepenger/Preview Content\"";
 				DEVELOPMENT_TEAM = EL8Z296J47;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Lommepenger/Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.chrissearle.Lommepenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,20 +380,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83228226240D9DB400262EDF /* Build configuration list for PBXProject "Lommepenger" */ = {
+		835F4F912725CC7200CCD91D /* Build configuration list for PBXProject "Lommepenger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8322823D240D9DB900262EDF /* Debug */,
-				8322823E240D9DB900262EDF /* Release */,
+				835F4FA22725CC7300CCD91D /* Debug */,
+				835F4FA32725CC7300CCD91D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8322823F240D9DB900262EDF /* Build configuration list for PBXNativeTarget "Lommepenger" */ = {
+		835F4FA42725CC7300CCD91D /* Build configuration list for PBXNativeTarget "Lommepenger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83228240240D9DB900262EDF /* Debug */,
-				83228241240D9DB900262EDF /* Release */,
+				835F4FA52725CC7300CCD91D /* Debug */,
+				835F4FA62725CC7300CCD91D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -394,49 +401,49 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		830CEF9C240F8EF000383FEC /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		835F4FBA2725CD5200CCD91D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 19.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
-		83228242240D9FA500262EDF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		835F4FBD2725CD7200CCD91D /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.2;
+				minimumVersion = 1.0.0;
 			};
 		};
-		83228245240DA09300262EDF /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+		835F4FC42725CEE600CCD91D /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		830CEF9D240F8EF000383FEC /* KeychainSwift */ = {
+		835F4FBB2725CD5200CCD91D /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 830CEF9C240F8EF000383FEC /* XCRemoteSwiftPackageReference "keychain-swift" */;
-			productName = KeychainSwift;
-		};
-		83228243240D9FA500262EDF /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 83228242240D9FA500262EDF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 835F4FBA2725CD5200CCD91D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		83228246240DA09300262EDF /* CodeScanner */ = {
+		835F4FBE2725CD7200CCD91D /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 83228245240DA09300262EDF /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			package = 835F4FBD2725CD7200CCD91D /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		835F4FC52725CEE600CCD91D /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 835F4FC42725CEE600CCD91D /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 83228223240D9DB400262EDF /* Project object */;
+	rootObject = 835F4F8E2725CC7200CCD91D /* Project object */;
 }
