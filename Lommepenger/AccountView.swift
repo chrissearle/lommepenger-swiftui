@@ -29,12 +29,20 @@ extension Double {
 
 struct AccountView: View {
     public var account : Account
+    public var primary: Bool
     
     var body: some View {
         VStack {
-            Text(account.accountNumber.accountFormat())
-                .padding(.vertical)
-                .font(.caption)
+            HStack {
+                if (!primary) {
+                    Text(account.name)
+                        .padding(.vertical)
+                        .font(.caption)
+                }
+                Text(account.accountNumber.accountFormat())
+                    .padding(.vertical)
+                    .font(primary ? .body : .caption)
+            }
             HStack {
                 VStack {
                     Text("Disponibelt")
@@ -64,6 +72,6 @@ struct AccountView_Previews: PreviewProvider {
                                      creditLimit: 0.0)
 
     static var previews: some View {
-        AccountView(account: testAccount)
+        AccountView(account: testAccount, primary: true)
     }
 }

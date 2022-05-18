@@ -4,12 +4,14 @@ import KeychainSwift
 class Config : Codable {
     let clientId: String
     let clientSecret: String
-    let accountNr: String
+    let cardAccountNr: String
+    let mainAccountNr: String
     
     enum CodingKeys: String, CodingKey {
         case clientId
         case clientSecret
-        case accountNr
+        case cardAccountNr
+        case mainAccountNr
     }
 }
 

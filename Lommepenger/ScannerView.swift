@@ -31,7 +31,7 @@ struct ScannerView: View {
             CodeScannerView(codeTypes: [.qr], simulatedData: simulatedData) { result in
                 switch result {
                 case .success(let code):
-                    self.scannedData = code
+                    self.scannedData = code.string
                 case .failure(let error):
                     print(error)
                 }

@@ -33,7 +33,8 @@ struct Accounts : Decodable {
 }
 
 class AccountService : ObservableObject {
-    @Published public var account : Account? = nil
+    @Published public var cardAccount : Account? = nil
+    @Published public var mainAccount: Account? = nil
     
     public func refresh(token: String, config: Config) {
         let decoder = JSONDecoder()
@@ -54,15 +55,35 @@ class AccountService : ObservableObject {
                 return
             }
             
-            guard let account = response.value?.accounts.filter({ (account) -> Bool in
-                account.accountNumber == config.accountNr
-            }).first else {
-                print("Unable to find account")
+            guard let cardAccount = self.findAccount(accounts: response.value, accountNr: config.cardAccountNr)
+            else {
+                print("Unable to find card account")
+
+                return
+            }
+            
+            self.cardAccount = cardAccount
+            
+            guard let mainAccount = self.findAccount(accounts: response.value, accountNr: config.mainAccountNr)
+            else {
+                print("Unable to find main account")
 
                 return
             }
 
-            self.account = account
+            self.mainAccount = mainAccount
         }
+    }
+    
+    private func findAccount(accounts: Accounts?, accountNr: String) -> Account? {
+        guard let account = accounts?.accounts.filter({ (account) -> Bool in
+            account.accountNumber == accountNr
+        }).first else {
+            print("Unable to find account")
+
+            return nil
+        }
+        
+        return account
     }
 }

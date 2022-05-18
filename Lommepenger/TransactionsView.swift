@@ -69,7 +69,7 @@ struct TransactionsView: View {
 
     var body: some View {
         VStack {
-            Text("Aktivitet")
+            Text("Aktivitet på " + account.name)
                 .padding(.vertical)
                 .font(.headline)
             .onAppear() {

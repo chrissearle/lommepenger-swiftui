@@ -16,11 +16,12 @@ struct ContentView: View {
                     if (self.authenticated == false) {
                         Text("Please authenticate")
                     } else {
-                        if (accountService.account != nil) {
+                        if (accountService.cardAccount != nil && accountService.mainAccount != nil) {
                             VStack {
-                                AccountView(account: accountService.account!)
-                                    .navigationBarTitle(Text(accountService.account!.name), displayMode: .inline)
-                                TransactionsView(account: accountService.account!, config: self.config!, token: self.token)
+                                AccountView(account: accountService.cardAccount!, primary: true)
+                                    .navigationBarTitle(Text(accountService.cardAccount!.name), displayMode: .inline)
+                                AccountView(account: accountService.mainAccount!, primary: false)
+                                TransactionsView(account: accountService.cardAccount!, config: self.config!, token: self.token)
                                 Spacer()
                             }
                         }

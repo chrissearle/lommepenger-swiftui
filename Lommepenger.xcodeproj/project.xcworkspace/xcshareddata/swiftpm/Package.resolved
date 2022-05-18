@@ -1,34 +1,32 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire",
-        "state": {
-          "branch": null,
-          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
-          "version": "5.4.4"
-        }
-      },
-      {
-        "package": "CodeScanner",
-        "repositoryURL": "https://github.com/twostraws/CodeScanner",
-        "state": {
-          "branch": null,
-          "revision": "a2144ddaa7c43a6ee00873edd4cc7815ad97942f",
-          "version": "1.0.7"
-        }
-      },
-      {
-        "package": "KeychainSwift",
-        "repositoryURL": "https://github.com/evgenyneu/keychain-swift",
-        "state": {
-          "branch": "master",
-          "revision": "e538f8bb0434c70d27b25ca72bec96735183c037",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+        "version" : "5.4.4"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "codescanner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twostraws/CodeScanner",
+      "state" : {
+        "revision" : "c27a66149b7483fe42e2ec6aad61d5c3fffe522d",
+        "version" : "2.1.1"
+      }
+    },
+    {
+      "identity" : "keychain-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/evgenyneu/keychain-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "e538f8bb0434c70d27b25ca72bec96735183c037"
+      }
+    }
+  ],
+  "version" : 2
 }
